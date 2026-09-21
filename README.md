@@ -1,11 +1,12 @@
-# Equipo 7 - Evaluaci�n Solemne 1
+# Equipo 7 - Evaluación Solemne 1
 **Asignatura:** Desarrollo de Aplicaciones Web
 
 ## Integrantes
-- (Nombre Integrante 1)
-- (Nombre Integrante 2)
+- Nicolás Ignacio Contreras Vásquez
+- Benjamin Nicolas Gonzalez Gatica
+- José Tomás Véliz Jorquera
 
 ## Contenidos
-- HTML5 Sem�ntico
+- HTML5 Semántico
 - CSS3
 - JavaScript / Bootstrap
