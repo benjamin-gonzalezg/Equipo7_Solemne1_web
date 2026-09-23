@@ -1,0 +1,149 @@
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: #17324d;
+}
+
+header {
+    background-color: #1565c0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-enlaces {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color:white;
+    text-decoration:none;
+    fong-weight: bold;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero h1 {
+    font-size:3rem;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    width: 60%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.presentacion {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #dff3ff;
+}
+
+.presentacion h2{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.presentacion p{
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.6;
+}
+
+.accesos {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.accesos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 30%;
+    min-height: 220px;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 30px 20px;
+    background-color: white;
+    border: 1px solid #d6eaf7;
+    border-radius: 12px;
+}
+
+.tarjeta h3 {
+    color: #1565c0;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.tarjeta a {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+
+}
+
+.tarjeta {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin-bottom: 8px;
+}
+
+footer p:last-child {
+    margin-bottom:0;
+}
