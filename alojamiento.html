@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alojamiento y Gastronomía - Destino Cordillera</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación (igual que index.html) -->
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Destino Cordillera</a>
+      <div class="nav-enlaces">
+        <a href="panoramas.html">Panoramas</a>
+        <a href="alojamiento.html" class="active">Alojamiento y Gastronomía</a>
+        <a href="contacto.html">Reserva y Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Banner Principal -->
+    <section class="hero-section">
+      <h1>Alojamiento y Gastronomía</h1>
+      <p>Encuentra el descanso perfecto y los mejores sabores en Destino Cordillera.</p>
+    </section>
+
+    <div class="container">
+
+      <!-- Sección Alojamiento (Tarjetas con Flexbox) -->
+      <section class="section-block">
+        <h2 class="section-title">Opciones de Hospedaje</h2>
+        <div class="card-grid">
+
+          <article class="card">
+            <img src="img/hotel_cordillera.jpg" alt="Hotel Cumbre Cordillera" width="100%" height="160">
+            <div class="card-content">
+              <p class="card-tag">Hotel 4 Estrellas</p>
+              <h3>Hotel Cumbre Cordillera</h3>
+              <p>Vistas panorámicas hacia las montañas, habitaciones de lujo, spa y restaurant de alta montaña.</p>
+              <span class="price">Desde $85.000 / noche</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/cabanas_bosque.jpg" alt="Cabañas El Bosque" width="100%" height="160">
+            <div class="card-content">
+              <p class="card-tag">Cabañas Equipadas</p>
+              <h3>Cabañas El Bosque</h3>
+              <p>Totalmente equipadas para familias, con chimenea a leña y tinas calientes al aire libre.</p>
+              <span class="price">Desde $60.000 / noche</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/hostal_refugio.jpg" alt="Hostal Refugio del Montañés" width="100%" height="160">
+            <div class="card-content">
+              <p class="card-tag">Hostal &amp; Camping</p>
+              <h3>Hostal Refugio del Montañés</h3>
+              <p>Ambiente acogedor para mochileros y excursionistas con desayuno cordillerano incluido.</p>
+              <span class="price">Desde $25.000 / noche</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Sección Gastronomía (Tabla Informativa) -->
+      <section class="section-block">
+        <h2 class="section-title">Gastronomía Local</h2>
+        <p class="subtitle">Los lugares más destacados para disfrutar de la cocina local:</p>
+
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Restaurante</th>
+                <th>Especialidad</th>
+                <th>Horario</th>
+                <th>Rango de Precios</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="img/restaurante_parrilla.jpg" alt="El Rincón Cordillerano" class="table-img"></td>
+                <td><strong>El Rincón Cordillerano</strong></td>
+                <td>Carnes a la parrilla y empanadas tradicionales</td>
+                <td>12:00 - 22:00 hrs</td>
+                <td>$$$ &mdash; $12.000 a $20.000 / persona</td>
+              </tr>
+              <tr>
+                <td><img src="img/cafe_cumbres.jpg" alt="Café de las Cumbres" class="table-img"></td>
+                <td><strong>Café de las Cumbres</strong></td>
+                <td>Repostería artesanal, chocolates y café de grano</td>
+                <td>08:30 - 20:00 hrs</td>
+                <td>$$ &mdash; $5.000 a $10.000 / persona</td>
+              </tr>
+              <tr>
+                <td><img src="img/sabores_montana.jpg" alt="Sabores de la Montaña" class="table-img"></td>
+                <td><strong>Sabores de la Montaña</strong></td>
+                <td>Cocina de autor con productos orgánicos locales</td>
+                <td>13:00 - 23:00 hrs</td>
+                <td>$$$$ &mdash; $25.000 a $40.000 / persona</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Pie de Página (igual que index.html) -->
+  <footer>
+    <p>&copy; 2026 Destino Cordillera</p>
+    <p>Turismo, naturaleza y experiencias en la cordillera de Chile.</p>
+  </footer>
+
+</body>
+</html>

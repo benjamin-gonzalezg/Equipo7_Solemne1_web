@@ -1,7 +1,3 @@
-
-
-
-
 *{
     margin:0;
     padding:0;
@@ -146,4 +142,87 @@ footer p{
 
 footer p:last-child {
     margin-bottom:0;
+}
+
+/* css de alojamiento */
+/*                     */
+/* Paleta del equipo: Blanco, Celeste y Azul */
+:root {
+  --azul-oscuro: #004085;
+  --azul-medio: #007bff;
+  --celeste-claro: #e6f2ff;
+  --blanco: #ffffff;
+  --texto: #1c2d42;
+  --borde: #cce5ff;
+}
+
+/* Configuración general */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  color: var(--texto);
+  background: #f8fbfd;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Menú superior (compartido con index.html: header > nav > a.logo + div.nav-enlaces) */
+header { background: var(--azul-oscuro); color: var(--blanco); }
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+header nav .logo {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nav-enlaces { display: flex; list-style: none; gap: 1rem; }
+.nav-enlaces a {
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+}
+.nav-enlaces a:hover,
+.nav-enlaces a.active { background: var(--azul-medio); }
+
+/* Banner principal */
+.hero-section { background: var(--azul-oscuro); color: var(--blanco); text-align: center; padding: 2rem 1rem; border-bottom: 4px solid var(--azul-medio); }
+
+/* Contenedores y secciones */
+.container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; flex: 1; }
+.section-block { background: var(--blanco); padding: 1.5rem; margin-bottom: 2rem; border: 1px solid var(--borde); border-radius: 6px; }
+.section-title { color: var(--azul-oscuro); border-bottom: 2px solid var(--azul-medio); margin-bottom: 1rem; padding-bottom: 0.3rem; }
+
+/* Tarjetas de hospedaje (Flexbox) */
+.card-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
+.card { border: 1px solid var(--borde); border-radius: 6px; flex: 1 1 calc(33.333% - 1rem); min-width: 250px; background: var(--blanco); }
+.card img { width: 100%; height: 160px; object-fit: cover; background: var(--celeste-claro); }
+.card-content { padding: 1rem; }
+.card-tag { font-size: 0.85rem; color: var(--azul-medio); font-weight: bold; }
+.price { font-weight: bold; color: var(--azul-medio); }
+
+/* Tabla de gastronomía */
+.table-responsive { overflow-x: auto; }
+.custom-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.custom-table th, .custom-table td { padding: 0.8rem; border: 1px solid var(--borde); text-align: left; }
+.custom-table th { background: var(--azul-oscuro); color: var(--blanco); }
+.custom-table tr:nth-child(even) { background: var(--celeste-claro); }
+.table-img { width: 90px; height: 60px; object-fit: cover; border-radius: 4px; display: block; }
+
+/* Pie de página */
+footer { background: var(--azul-oscuro); color: var(--blanco); text-align: center; padding: 1rem; margin-top: 2rem; }
+
+/* Celulares */
+@media (max-width: 768px) {
+  header nav { flex-direction: column; gap: 1rem; }
+  .card { flex: 1 1 100%; }
 }
