@@ -34,7 +34,7 @@ nav {
 nav a {
     color:white;
     text-decoration:none;
-    fong-weight: bold;
+    font-weight: bold;
 }
 
 
@@ -227,4 +227,98 @@ footer { background: var(--azul-oscuro); color: var(--blanco); text-align: cente
 @media (max-width: 768px) {
   header nav { flex-direction: column; gap: 1rem; }
   .card { flex: 1 1 100%; }
+}
+
+
+.contacto {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.contacto h1 {
+    color: #004085;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    max-width:700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #cce5ff;
+    border-radius: 10px;
+}
+
+.formulario h2 {
+    color: #004085;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #cce5ff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #004085;
+}
+
+.datos-contacto {
+    width: 90%;
+    max-width: 700px;
+    margin:30px auto 50px;
+    padding: 30px;
+    background-color: #e6f2ff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.datos-contacto h2 {
+    color: #004085;
+    margin-bottom: 20px;
+}
+
+.datos-contacto p {
+    margin-bottom: 10px;
 }
