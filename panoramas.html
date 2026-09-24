@@ -29,8 +29,8 @@
             
             <!-- Tarjeta 1 -->
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Trekking al Glaciar">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalTrekking" style="cursor: pointer;">
+                    <img src="img/TREKKING-GLACIAR-CAGLIERO-SONY-38-1-300x200.jpg" class="card-img-top" alt="Trekking al Glaciar">
                     <div class="card-body">
                         <h5 class="card-title">Trekking al Glaciar Escondido</h5>
                         <p class="card-text">Una caminata de dificultad media con vistas increíbles a los picos nevados.</p>
@@ -40,8 +40,8 @@
 
             <!-- Tarjeta 2 -->
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Caminata en el Bosque">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalBosque" style="cursor: pointer;">
+                    <img src="img/sendero-las-torres-chileno-0014.jpg-300x200.webp" class="card-img-top" alt="Caminata en el Bosque">
                     <div class="card-body">
                         <h5 class="card-title">Caminata en el Bosque</h5>
                         <p class="card-text">Disfruta de la naturaleza en una caminata relajante por el bosque de la cordillera.</p>
@@ -51,8 +51,8 @@
 
             <!-- Tarjeta 3 -->
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Observación de Aves">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalAves" style="cursor: pointer;">
+                    <img src="img/BLOG-5-300x200.jpg" class="card-img-top" alt="Observación de Aves">
                     <div class="card-body">
                         <h5 class="card-title">Observación de Aves</h5>
                         <p class="card-text">Descubre una variedad de especies aviares en su hábitat natural.</p>
@@ -62,8 +62,8 @@
 
             <!-- Tarjeta 4 -->
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Paseo en el Lago">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalLago" style="cursor: pointer;">
+                    <img src="img/Calcurrupe-15-300x200.jpg" class="card-img-top" alt="Paseo en el Lago">
                     <div class="card-body">
                         <h5 class="card-title">Paseo en el Lago</h5>
                         <p class="card-text">Experimenta la tranquilidad del lago mientras navegas en kayak.</p>
@@ -73,8 +73,8 @@
 
             <!-- Tarjeta 5 -->
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Senderismo a lo Alto">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalSenderismo" style="cursor: pointer;">
+                    <img src="img/Valle-Frances-300x200.jpg" class="card-img-top" alt="Senderismo a lo Alto">
                     <div class="card-body">
                         <h5 class="card-title">Senderismo a lo Alto</h5>
                         <p class="card-text">Afronta el desafío de ascender a lo más alto de la cordillera.</p>
@@ -84,8 +84,8 @@
 
             <!-- Tarjeta 6 -->
             <div class ="col">
-                <div class= "card h-100 shadow-sm">
-                    <img src= "https://via.placeholder.com/300x200" class ="card-img-top" alt ="Observación de Estrellas">
+                <div class= "card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#modalEstrellas" style="cursor: pointer;">
+                    <img src= "img/b9c0f267-4d0c-4fd0-8117-c1b7ce9a69eb-300x200.jpg" class ="card-img-top" alt ="Observación de Estrellas">
                     <div class ="card-body">
                         <h5 class= "card-title">Observación de Estrellas</h5>
                         <p class ="card-text">Disfruta de un cielo estrellado sin contaminación lumínica.</p>
@@ -96,11 +96,139 @@
         </div>
     </main>
 
-    <!-- Pie de Página (igual que index.html) -->
+    <!-- Modal para Trekking -->
+    <div class="modal fade" id="modalTrekking" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles: Trekking al Glaciar Escondido</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/actividad-icehike-41.webp" class="img-fluid w-100 rounded mb-3" alt="Trekking al Glaciar Escondido">
+            <p><strong>Dificultad:</strong> Media</p>
+            <p><strong>Duración:</strong> 4 a 5 horas.</p>
+            <p><strong>Detalles:</strong> Prepárate para una aventura inolvidable. Esta ruta te llevará a través de bosques nativos hasta llegar a la base del majestuoso glaciar. Recuerda llevar ropa de abrigo, buen calzado y agua.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal 2: Caminata en el Bosque -->
+    <div class="modal fade" id="modalBosque" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles: Caminata en el Bosque</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/Parques-Reservas-Mocho-Choshuenco-Panguipulli-2.jpg" class="img-fluid w-100 rounded mb-3" alt="Caminata en el Bosque">
+            <p><strong>Dificultad:</strong> Baja</p>
+            <p><strong>Duración:</strong> 2 horas.</p>
+            <p><strong>Detalles:</strong> Un recorrido ideal para toda la familia. Disfruta del sonido de la naturaleza y aprende sobre la flora nativa en esta caminata relajante y de poco desnivel.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Observación de Aves -->
+    <div class="modal fade" id="modalAves" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles: Observación de Aves</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/El-condor-en-los-Andes-peruanos.jpg" class="img-fluid w-100 rounded mb-3" alt="Observación de Aves">
+            <p><strong>Dificultad:</strong> Baja</p>
+            <p><strong>Duración:</strong> 3 horas.</p>
+            <p><strong>Detalles:</strong> Acompañados por un guía experto, visitaremos miradores estratégicos para avistar cóndores, águilas y diversas especies endémicas. Se incluyen binoculares.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: Paseo en el Lago -->
+    <div class="modal fade" id="modalLago" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles: Paseo en el Lago</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/ParqueFutangue15-1-1024x683-1.jpg" class="img-fluid w-100 rounded mb-3" alt="Paseo en el Lago">
+            <p><strong>Dificultad:</strong> Media</p>
+            <p><strong>Duración:</strong> Medio día.</p>
+            <p><strong>Detalles:</strong> Navega por las aguas cristalinas del lago cordillerano en kayak o bote a remo. Una experiencia perfecta para conectar con el agua y fotografiar el paisaje desde otra perspectiva.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5: Senderismo a lo Alto -->
+    <div class="modal fade" id="modalSenderismo" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles: Senderismo a lo Alto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/3lagunas-cordillera-huayhuash.jpg" class="img-fluid w-100 rounded mb-3" alt="Senderismo a lo Alto">
+            <p><strong>Dificultad:</strong> Alta</p>
+            <p><strong>Duración:</strong> 6 a 8 horas.</p>
+            <p><strong>Detalles:</strong> Ruta exigente diseñada para aventureros con experiencia. Ascenderemos por caminos empinados para lograr la mejor vista panorámica de todo el valle.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6: Observación de Estrellas -->
+    <div class="modal fade" id="modalEstrellas" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles: Observación de Estrellas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/observacion-estrellas-chile.webp" class="img-fluid w-100 rounded mb-3" alt="Observación de Estrellas">
+            <p><strong>Dificultad:</strong> Baja</p>
+            <p><strong>Duración:</strong> 2 horas (Nocturno).</p>
+            <p><strong>Detalles:</strong> Aléjate de las luces de la ciudad y únete a nuestro tour astronómico. Usaremos telescopios profesionales para observar constelaciones, planetas y la Vía Láctea.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   <footer>
     <p>&copy; 2026 Destino Cordillera</p>
     <p>Turismo, naturaleza y experiencias en la cordillera de Chile.</p>
   </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
