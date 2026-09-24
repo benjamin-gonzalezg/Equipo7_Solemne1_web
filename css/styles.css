@@ -1,152 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color:white;
-    color: #17324d;
-}
-
-header {
-    background-color: #1565c0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-}
-
-.logo {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.nav-enlaces {
-    display: flex;
-    gap: 30px;
-}
-
-nav a {
-    color:white;
-    text-decoration:none;
-    font-weight: bold;
-}
-
-
-.hero {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.hero h1 {
-    font-size:3rem;
-    margin-bottom: 30px;
-}
-
-.hero img {
-    width: 60%;
-    height: 450px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0 auto;
-
-}
-
-.presentacion {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #dff3ff;
-}
-
-.presentacion h2{
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-}
-
-.presentacion p{
-    max-width: 800px;
-    margin: 0 auto 15px;
-    line-height: 1.6;
-}
-
-.accesos {
-    text-align: center;
-    padding: 60px 40px;
-}
-
-.accesos h2 {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-}
-
-.tarjeta {
-    display: inline-block;
-    width: 30%;
-    min-height: 220px;
-    vertical-align: top;
-    margin: 0 1%;
-    padding: 30px 20px;
-    background-color: white;
-    border: 1px solid #d6eaf7;
-    border-radius: 12px;
-}
-
-.tarjeta h3 {
-    color: #1565c0;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.tarjeta p {
-    line-height: 1.5;
-    margin-bottom: 25px;
-}
-
-.tarjeta a {
-    display: inline-block;
-    background-color: #1565c0;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-
-}
-
-.tarjeta {
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.tarjeta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-footer {
-    background-color: #1565c0;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
-}
-
-footer p{
-    margin-bottom: 8px;
-}
-
-footer p:last-child {
-    margin-bottom:0;
-}
-
-/* css de alojamiento */
-/*                     */
-/* Paleta del equipo: Blanco, Celeste y Azul */
+/* Paleta del equipo (Variables unificadas) */
 :root {
   --azul-oscuro: #004085;
   --azul-medio: #007bff;
@@ -156,63 +8,55 @@ footer p:last-child {
   --borde: #cce5ff;
 }
 
-/* Configuración general */
+/* Base y Reset General */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: Arial, sans-serif;
-  color: var(--texto);
-  background: #f8fbfd;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+body { 
+  font-family: Arial, sans-serif; 
+  color: var(--texto); 
+  background: #f8fbfd; 
+  line-height: 1.5; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
 }
 
-/* Menú superior (compartido con index.html: header > nav > a.logo + div.nav-enlaces) */
+/* Navegación y Header */
 header { background: var(--azul-oscuro); color: var(--blanco); }
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-header nav .logo {
-  color: var(--blanco);
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; flex-wrap: wrap; gap: 1rem; }
+nav .logo, .nav-enlaces a { color: var(--blanco); text-decoration: none; font-weight: bold; }
+nav .logo { font-size: 1.3rem; }
 .nav-enlaces { display: flex; list-style: none; gap: 1rem; }
-.nav-enlaces a {
-  color: var(--blanco);
-  text-decoration: none;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-}
-.nav-enlaces a:hover,
-.nav-enlaces a.active { background: var(--azul-medio); }
+.nav-enlaces a { padding: 0.4rem 0.8rem; border-radius: 4px; }
+.nav-enlaces a:hover, .nav-enlaces a.active { background: var(--azul-medio); }
 
-/* Banner principal (estilo plano, igual que el hero de index.html) */
-.hero-section { background: transparent; color: var(--azul-oscuro); text-align: center; padding: 2rem 1rem 1.5rem; }
-.hero-section h1 { font-size: 2.2rem; margin-bottom: 0.4rem; }
-.hero-section p { font-size: 1rem; color: var(--texto); }
+/* Banners e Intros (Hero / Presentación / Contacto) */
+.hero, .hero-section, .contacto { text-align: center; padding: 2rem 1rem; }
+.hero h1, .hero-section h1, .contacto h1 { font-size: 2.2rem; color: var(--azul-oscuro); margin-bottom: 0.5rem; }
+.hero img { width: 60%; height: 450px; object-fit: cover; display: block; margin: 0 auto; }
+.presentacion { text-align: center; padding: 60px 20px; background: #dff3ff; }
+.presentacion h2, .accesos h2 { font-size: 2.2rem; margin-bottom: 20px; }
+.presentacion p, .contacto p { max-width: 800px; margin: 0 auto 15px; line-height: 1.6; }
 
-/* Contenedores y secciones */
+/* Contenedores y Secciones de Alojamiento/General */
 .container { width: 95%; max-width: 1800px; margin: 2rem auto; padding: 0 1rem; flex: 1; }
 .section-block { background: var(--blanco); padding: 2rem; margin-bottom: 2rem; border: 1px solid var(--borde); border-radius: 6px; }
 .section-title { color: var(--azul-oscuro); border-bottom: 2px solid var(--azul-medio); margin-bottom: 1rem; padding-bottom: 0.3rem; }
 
-/* Tarjetas de hospedaje (Flexbox) */
+/* Tarjetas (Index & Alojamiento) */
+.accesos { text-align: center; padding: 60px 40px; }
 .card-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
 .card { border: 1px solid var(--borde); border-radius: 6px; flex: 1 1 calc(33.333% - 1rem); min-width: 250px; background: var(--blanco); }
 .card img { width: 100%; height: 190px; object-fit: cover; background: var(--celeste-claro); }
 .card-content { padding: 1rem; }
-.card-tag { font-size: 0.85rem; color: var(--azul-medio); font-weight: bold; }
-.price { font-weight: bold; color: var(--azul-medio); }
+.card-tag, .price { font-weight: bold; color: var(--azul-medio); }
 
-/* Tabla de gastronomía */
+.tarjeta { display: inline-block; width: 30%; min-height: 220px; vertical-align: top; margin: 0 1%; padding: 30px 20px; background: var(--blanco); border: 1px solid #d6eaf7; border-radius: 12px; transition: transform 0.2s, box-shadow 0.2s; }
+.tarjeta h3 { color: var(--azul-oscuro); font-size: 1.5rem; margin-bottom: 15px; }
+.tarjeta p { line-height: 1.5; margin-bottom: 25px; }
+.tarjeta a { display: inline-block; background: var(--azul-oscuro); color: var(--blanco); text-decoration: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; }
+.tarjeta:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+
+/* Tabla de Gastronomía */
 .table-responsive { overflow-x: auto; }
 .custom-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
 .custom-table th, .custom-table td { padding: 0.8rem; border: 1px solid var(--borde); text-align: left; }
@@ -220,105 +64,26 @@ header nav .logo {
 .custom-table tr:nth-child(even) { background: var(--celeste-claro); }
 .table-img { width: 110px; height: 75px; object-fit: cover; border-radius: 4px; display: block; }
 
+/* Formulario y Datos de Contacto */
+.formulario, .datos-contacto { width: 90%; max-width: 700px; margin: 30px auto; padding: 30px; border-radius: 10px; }
+.formulario { background: var(--blanco); border: 1px solid var(--borde); }
+.datos-contacto { background: var(--celeste-claro); margin-bottom: 50px; text-align: center; }
+.formulario h2, .datos-contacto h2 { color: var(--azul-oscuro); text-align: center; margin-bottom: 20px; }
+.formulario form { display: flex; flex-direction: column; }
+.formulario label { font-weight: bold; margin-bottom: 6px; }
+.formulario input, .formulario select, .formulario textarea { font-family: inherit; padding: 10px; margin-bottom: 18px; border: 1px solid var(--borde); border-radius: 5px; font-size: 1rem; }
+.formulario textarea { resize: vertical; }
+.formulario button { background: var(--azul-medio); color: var(--blanco); border: none; padding: 12px; border-radius: 5px; font-weight: bold; font-size: 1rem; cursor: pointer; }
+.formulario button:hover { background: var(--azul-oscuro); }
+.datos-contacto p { margin-bottom: 10px; }
+
 /* Pie de página */
 footer { background: var(--azul-oscuro); color: var(--blanco); text-align: center; padding: 1rem; margin-top: 2rem; }
+footer p { margin-bottom: 8px; }
+footer p:last-child { margin-bottom: 0; }
 
-/* Celulares */
+/* Adaptación a Celulares */
 @media (max-width: 768px) {
-  header nav { flex-direction: column; gap: 1rem; }
-  .card { flex: 1 1 100%; }
-}
-
-
-.contacto {
-    text-align: center;
-    padding: 50px 20px 30px;
-}
-
-.contacto h1 {
-    color: #004085;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.contacto p {
-    max-width:700px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.formulario {
-    width: 90%;
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: white;
-    border: 1px solid #cce5ff;
-    border-radius: 10px;
-}
-
-.formulario h2 {
-    color: #004085;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.formulario form {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.formulario label {
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-
-.formulario input,
-.formulario select,
-.formulario textarea {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    margin-bottom: 18px;
-    border: 1px solid #cce5ff;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.formulario textarea {
-    resize: vertical;
-}
-
-.formulario button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.formulario button:hover {
-    background-color: #004085;
-}
-
-.datos-contacto {
-    width: 90%;
-    max-width: 700px;
-    margin:30px auto 50px;
-    padding: 30px;
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.datos-contacto h2 {
-    color: #004085;
-    margin-bottom: 20px;
-}
-
-.datos-contacto p {
-    margin-bottom: 10px;
+  nav { flex-direction: column; gap: 1rem; }
+  .card, .tarjeta { flex: 1 1 100%; width: 100%; margin: 10px 0; }
 }
