@@ -36,7 +36,7 @@ Equipo7_Solemne1_web/
 ├── css/
 │   └── styles.css
 ├── img/
-├── js/
+│
 └── README.md
 ```
 
